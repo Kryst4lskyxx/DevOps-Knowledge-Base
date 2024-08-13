@@ -26,8 +26,8 @@ Then get yourself set up with link:http://docs.python-guide.org/en/latest/dev/vi
 
 [source]
 ----
-virtualenv neo4j-movies
-source neo4j-movies/bin/activate
+virtualenv neo4j-devops
+source neo4j-devops/bin/activate
 ----
 
 The next step is to install the dependencies for the app with pip (or pip3 for python3):
