@@ -1,0 +1,42 @@
+@prefix dtl: <http://www.semanticweb.org/yeyuan/ontologies/dt_lifecycle/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dtl:TheWorldAvatar a dtl:Project ;
+    dtl:isInTheStageOf dtl:Deployment ;
+    dtl:name "TheWorldAvatar"^^xsd:string ;
+    dtl:ownedBy dtl:cambridge-cares ;
+    dtl:utilizes dtl:actions,
+        dtl:docker,
+        dtl:junit,
+        dtl:maven,
+        dtl:npm,
+        dtl:selenium,
+        dtl:testng .
+
+dtl:Deployment a dtl:DevOpsLifecyclePhase ;
+    dtl:name "Deployment"^^xsd:string .
+
+dtl:actions a dtl:DevOpsTool ;
+    dtl:name "actions"^^xsd:string .
+
+dtl:cambridge-cares a dtl:Stakeholder ;
+    dtl:name "cambridge-cares"^^xsd:string .
+
+dtl:docker a dtl:DevOpsTool ;
+    dtl:name "docker"^^xsd:string .
+
+dtl:junit a dtl:DevOpsTool ;
+    dtl:name "junit"^^xsd:string .
+
+dtl:maven a dtl:DevOpsTool ;
+    dtl:name "maven"^^xsd:string .
+
+dtl:npm a dtl:DevOpsTool ;
+    dtl:name "npm"^^xsd:string .
+
+dtl:selenium a dtl:DevOpsTool ;
+    dtl:name "selenium"^^xsd:string .
+
+dtl:testng a dtl:DevOpsTool ;
+    dtl:name "testng"^^xsd:string .
+

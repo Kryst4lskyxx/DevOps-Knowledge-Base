@@ -1,0 +1,22 @@
+@prefix dtl: <http://www.semanticweb.org/yeyuan/ontologies/dt_lifecycle/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dtl:rdflib-neo4j a dtl:Project ;
+    dtl:isInTheStageOf <http://www.semanticweb.org/yeyuan/ontologies/dt_lifecycle/CI/CD> ;
+    dtl:name "rdflib-neo4j"^^xsd:string ;
+    dtl:ownedBy dtl:neo4j-labs ;
+    dtl:utilizes dtl:actions,
+        dtl:npm .
+
+<http://www.semanticweb.org/yeyuan/ontologies/dt_lifecycle/CI/CD> a dtl:DevOpsLifecyclePhase ;
+    dtl:name "CI/CD"^^xsd:string .
+
+dtl:actions a dtl:DevOpsTool ;
+    dtl:name "actions"^^xsd:string .
+
+dtl:neo4j-labs a dtl:Stakeholder ;
+    dtl:name "neo4j-labs"^^xsd:string .
+
+dtl:npm a dtl:DevOpsTool ;
+    dtl:name "npm"^^xsd:string .
+
